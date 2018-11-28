@@ -111,6 +111,27 @@ public class GameManager : MonoBehaviour {
         {
             vv -= 1;
         }
+
+        if (uu > 0 && !keyPressed)
+        {
+            uu -= 1;
+        }
+        if (ii > 0 && !keyPressed)
+        {
+            ii -= 1;
+        }
+        if (oo > 0 && !keyPressed)
+        {
+            oo -= 1;
+        }
+        if (pp > 0 && !keyPressed)
+        {
+            pp -= 1;
+        }
+        if (nn > 0 && !keyPressed)
+        {
+            nn -= 1;
+        }
     }
 }
 
