@@ -9,7 +9,12 @@ public class GameManager : MonoBehaviour {
     public int ee = 0;
     public int rr = 0;
     public int vv = 0;
-    public int key = 0;
+    public int uu = 0;
+    public int ii = 0;
+    public int oo = 0;
+    public int pp = 0;
+    public int nn = 0;
+    
     public bool keyPressed = false;
 
     // Use this for initialization
@@ -50,13 +55,37 @@ public class GameManager : MonoBehaviour {
             vv += 1;
         }
 
-        key = qq + ww + ee + rr + vv;
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            keyPressed = true;
+            uu += 1;
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            keyPressed = true;
+            ii += 1;
+        }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            keyPressed = true;
+            oo += 1;
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            keyPressed = true;
+            pp += 1;
+        }
+
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            keyPressed = true;
+            nn += 1;
+        }
+
         keyPressed = false;
-        /*qq -= 1;
-        ww -= 1;
-        ee -= 1;
-        rr -= 1;
-        vv -= 1;*/
 
 
     }
