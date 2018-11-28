@@ -87,7 +87,6 @@ public class GameManager : MonoBehaviour {
 
         keyPressed = false;
 
-
     }
 
     private void Decrement()
@@ -114,3 +113,5 @@ public class GameManager : MonoBehaviour {
         }
     }
 }
+
+
