@@ -52,13 +52,6 @@ public class GameManager : MonoBehaviour {
 
         key = qq + ww + ee + rr + vv;
         keyPressed = false;
-        /*qq -= 1;
-        ww -= 1;
-        ee -= 1;
-        rr -= 1;
-        vv -= 1;*/
-
-
     }
 
     private void Decrement()
@@ -85,3 +78,5 @@ public class GameManager : MonoBehaviour {
         }
     }
 }
+
+
