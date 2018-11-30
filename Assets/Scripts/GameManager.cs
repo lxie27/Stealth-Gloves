@@ -16,14 +16,17 @@ public class GameManager : MonoBehaviour {
     public float nn = 0;
     
     public bool keyPressed = false;
-
+    public static float measureTotal;
+    
     // Use this for initialization
     void Start () {
-        InvokeRepeating("Decrement", .1f, .1f);
+        InvokeRepeating("Decrement", .1f, .015f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+        measureTotal = qq + ww + ee + rr + vv + uu + ii + oo + pp + nn;
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
