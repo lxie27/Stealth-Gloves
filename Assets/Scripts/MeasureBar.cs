@@ -5,7 +5,7 @@ using UnityEngine;
 public class MeasureBar : MonoBehaviour {
     
     public char fkey;
-    public int measured;
+    public float measured;
     GameObject gm;
     Renderer rend; 
 
@@ -60,17 +60,20 @@ public class MeasureBar : MonoBehaviour {
             measured = gm.GetComponent<GameManager>().nn;
         }
         transform.localScale = new Vector3(0.5f, measured, 0.1f);
+
+        Vector3 position = transform.position;
+        transform.position = new Vector3(position[0], measured/2f, position[2]);
         ChangeColor();
 	}
 
     private void ChangeColor()
     {
         Color updateColor = Color.red;
-        if (measured <= 5)
+        if (measured <= 2f)
         {
             rend.material.color = Color.green;
         }
-        else if (measured <= 10)
+        else if (measured <= 5f)
         {
             rend.material.color = Color.yellow;
         }
