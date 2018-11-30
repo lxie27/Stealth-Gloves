@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        InvokeRepeating("Decrement", 1.0f, 1.0f);
+        InvokeRepeating("Decrement", .1f, .1f);
 	}
 	
 	// Update is called once per frame
@@ -91,46 +91,47 @@ public class GameManager : MonoBehaviour {
 
     private void Decrement()
     {
+        float dec = .05f;
+
         if (qq > 0 && !keyPressed)
         {
-            qq -= 1f;
+            qq -= dec;
         }
         if (ww > 0 && !keyPressed)
         {
-            ww -= 1f;
+            ww -= dec;
         }
         if (ee > 0 && !keyPressed)
         {
-            ee -= 1f;
+            ee -= dec;
         }
         if (rr > 0 && !keyPressed)
         {
-            rr -= 1f;
+            rr -= dec;
         }
         if (vv > 0 && !keyPressed)
         {
-            vv -= 1f;
+            vv -= dec;
         }
-
         if (uu > 0 && !keyPressed)
         {
-            uu -= 1f;
+            uu -= dec;
         }
         if (ii > 0 && !keyPressed)
         {
-            ii -= 1f;
+            ii -= dec;
         }
         if (oo > 0 && !keyPressed)
         {
-            oo -= 1f;
+            oo -= dec;
         }
         if (pp > 0 && !keyPressed)
         {
-            pp -= 1f;
+            pp -= dec;
         }
         if (nn > 0 && !keyPressed)
         {
-            nn -= 1f;
+            nn -= dec;
         }
     }
 }
