@@ -28,61 +28,61 @@ public class GameManager : MonoBehaviour {
 
         measureTotal = qq + ww + ee + rr + vv + uu + ii + oo + pp + nn;
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && qq < 6.5f)
         {
             keyPressed = true;
             qq += 1f;
         }
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) && ww < 6.5f)
         {
             keyPressed = true;
             ww += 1f;
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && ee < 6.5f)
         {
             keyPressed = true;
             ee += 1f;
         }
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && rr < 6.5f)
         {
             keyPressed = true;
             rr += 1f;
         }
 
-        if (Input.GetKeyDown(KeyCode.V))
+        if (Input.GetKeyDown(KeyCode.V) && vv < 6.5f)
         {
             keyPressed = true;
             vv += 1f;
         }
 
-        if (Input.GetKeyDown(KeyCode.U))
+        if (Input.GetKeyDown(KeyCode.U) && uu < 6.0f)
         {
             keyPressed = true;
             uu += 1f;
         }
 
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.I) && ii < 6.5f)
         {
             keyPressed = true;
             ii += 1f;
         }
 
-        if (Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown(KeyCode.O) && oo < 6.5f)
         {
             keyPressed = true;
             oo += 1f;
         }
 
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.P) && pp < 6.5f)
         {
             keyPressed = true;
             pp += 1f;
         }
 
-        if (Input.GetKeyDown(KeyCode.N))
+        if (Input.GetKeyDown(KeyCode.N) && nn < 6.5f)
         {
             keyPressed = true;
             nn += 1f;
