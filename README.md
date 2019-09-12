@@ -1,2 +1,2 @@
 # Stealth-Gloves
-Final Project for GAME3300
+Demo of Stealth Gloves interface
